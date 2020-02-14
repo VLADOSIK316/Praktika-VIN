@@ -11,7 +11,7 @@ namespace VIN_LIB.dll
 
         bool CheckVIN(string vin)
       {
-        Regex vi = new Regex(@"[A-H,J-N,P,R-Z,\d]{17}");
+         Regex vi = new Regex(@"[A-H,J-N,P,R-Z,\d]{17}");
         if (!vi.IsMatch(vin)) return false;
       }
     string GetVINCountry(string vin)
